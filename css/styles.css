@@ -38,16 +38,30 @@ a:hover {
   align-items: flex-end;
 }
 
-.background #logo {
+.background #circle1 {
   height: auto;
-  width: 25%;
-  max-width: 600px;
-  margin: -1px;
-  min-width: 300px;
+  width: 220px;
+  margin: 0 0 0 180px;
 }
 
-.background #logo svg {
-  display: block;
+.background #circle2 {
+  height: auto;
+  width: 110px;
+  margin: 0 0 0 215px;
+}
+
+.background #circle3 {
+  height: auto;
+  width: 110px;
+  margin: 0 350px 119px 90px;
+  position: absolute;
+}
+
+.background #circle4 {
+  height: auto;
+  width: 220px;
+  margin: 0 -5px 229.4px 90px;
+  position: absolute;
 }
 
 .foreground {
@@ -115,6 +129,33 @@ a:hover {
 }
 
 @media screen and (max-width : 770px){
+
+  .background #circle1 {
+    height: auto;
+    width: 170px;
+    margin: 0 0 0 155px;
+  }
+  
+  .background #circle2 {
+    height: auto;
+    width: 85px;
+    margin: 0 0 0 180px;
+  }
+  
+  .background #circle3 {
+    height: auto;
+    width: 85px;
+    margin: 0 300px 99px 90px;
+    position: absolute;
+  }
+  
+  .background #circle4 {
+    height: auto;
+    width: 170px;
+    margin: 0 5px 184px 90px;
+    position: absolute;
+  }
+
   .foreground #text1 {
     font-size: 350%;
   }

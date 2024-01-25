@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>404</title>
     <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script> 
     <link rel="icon" href="./images/favicon.png" />
   </head>
 
   <body>
     <div class="background">
-      <img alt="Sean Wallace 404 logo" src="./images/icon.svg" id="logo" />
+      <img alt="Sean Wallace 404 logo" src="./images/circle.svg" id="circle1" />
+      <img alt="Sean Wallace 404 logo" src="./images/circle2.svg" id="circle2" />
+      <img alt="Sean Wallace 404 logo" src="./images/circle3.svg" id="circle3" />
+      <img alt="Sean Wallace 404 logo" src="./images/circle4.svg" id="circle4" />
     </div>
     <div class="foreground">
       <p id="text1">Well, this is awkward.</p>
@@ -31,5 +36,13 @@
         </a>
       </div>
     </div>
+    <script>
+      $("#circle1, #circle2, #circle3, #circle4").throwable({
+        containment:"parent",
+        autostart:false,
+        gravity:{x:0,y:4},
+        collisionDectection:true,
+      });
+    </script>
   </body>
 </html>
